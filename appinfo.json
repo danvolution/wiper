@@ -1,0 +1,49 @@
+{
+    "appKeys": {
+        "KEY_BLUETOOTH_VIBRATE": 0,
+        "KEY_USAGE_DURATION": 1
+    },
+    "capabilities": [
+        "configurable"
+    ],
+    "companyName": "dansherbeck",
+    "longName": "Wiper",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/wiper.png",
+                "name": "IMAGE_WIPER",
+                "type": "png"
+            },
+            {
+                "file": "images/menu_icon.png",
+                "menuIcon": true,
+                "name": "MENU",
+                "type": "png"
+            },
+            {
+                "file": "images/block_white_9x9.png",
+                "name": "IMAGE_BLOCK_WHITE_9x9",
+                "type": "png"
+            },
+            {
+                "file": "images/am.png",
+                "name": "IMAGE_AM",
+                "type": "png"
+            },
+            {
+                "file": "images/pm.png",
+                "name": "IMAGE_PM",
+                "type": "png"
+            }
+        ]
+    },
+    "shortName": "Wiper",
+    "uuid": "59a37153-a53f-42b7-8971-4a6721bfc36d",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
