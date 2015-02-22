@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html lang="en-US">
+  <head>
+    <title>Wiper Settings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h1 style="margin:0% 10%;">Wiper Settings</h1>
+        <!-- PayPal -->
+        <div style="margin-bottom:7px;text-align:center;">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </div><!-- /PayPal -->
+      </div><!-- /header -->
+
+      <div role="main" class="ui-content">
+        <div class="ui-field-contain">
+          <label for="bluetooth_vibrate_select">Vibrate on Bluetooth disconnect:</label>
+          <select id="bluetooth_vibrate_select" data-role="flipswitch" data-mini="true">
+            <option value="0" selected>Off</option>
+            <option value="1">On</option>
+          </select>
+        </div>
+      </div><!-- /content -->
+
+      <div data-role="footer" data-position="fixed" style="overflow:hidden;">
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#" id="button_cancel" class="ui-btn ui-shadow ui-icon-delete ui-btn-icon-left">Cancel</a>
+            </li>
+            <li>
+              <a href="#" id="button_save" class="ui-btn ui-shadow ui-icon-check ui-btn-icon-left ui-btn-active">Save</a>
+            </li>
+          </ul>
+        </div><!-- /navbar -->
+      </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <script>    
+      // The current settings version of the app. Value is a unique integer that
+      // is incremented whenever settings change.
+      var CURRENT_SETTINGS_VERSION = "1";
+      
+      $().ready(function() {
+        // Get installed settings version
+        var installedSettingsVersion = getURLVariableInt("installedSettingsVersion", 0);
+
+        // Initialize Bluetooth vibrate
+        initializeFlipSwitch("bluetoothVibrate", "bluetooth_vibrate_select", 1);
+      });
+
+      $("#button_cancel").click(function() {
+        document.location = "pebblejs://close#";
+      });
+
+      $("#button_save").click(function() {
+        var settings = getSettings();
+        var location = "pebblejs://close#" + encodeURIComponent(JSON.stringify(settings));
+        document.location = location;
+      });
+
+      function getSettings() {
+        var bluetoothVibrateSelect = document.getElementById("bluetooth_vibrate_select");
+
+        var settings = {
+          "bluetoothVibrate" : bluetoothVibrateSelect.options[bluetoothVibrateSelect.selectedIndex].value
+        }
+
+        return settings;
+      };
+
+      function initializeFlipSwitch(variableName, switchId, defaultValue) {
+        var urlVariable = getURLVariableInt(variableName, defaultValue);
+        if (urlVariable == 1) {
+          $("#" + switchId).val("1");
+          $("#" + switchId).parent().addClass("ui-flipswitch-active");
+        }
+
+        return urlVariable;
+      }
+
+      function getURLVariable(name, defaultValue) {
+        name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+        var regexS = "[\\?&]" + name + "=([^&#]*)",
+            regex = new RegExp(regexS),
+            results = regex.exec(window.location.href);
+
+        if (results == null) {
+          return defaultValue;
+
+        } else {
+          return results[1];
+        }
+      }
+
+      function getURLVariableInt(name, defaultValue) {
+        var result = getURLVariable(name, defaultValue);
+
+        if (isNaN(result)) {
+          result = defaultValue;
+
+        } else {
+          result = parseInt(result);
+        }
+
+        return result;
+      }
+    </script> 
+
+  </body>
+</html>
